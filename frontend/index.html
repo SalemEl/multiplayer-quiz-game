@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<div class="page-layout">
+  <aside class="side-panel">
+    <div class="panel-header">
+      <h2>🎮 Quiz Game Login</h2>
+    </div>
+
+    <div class="panel-body">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+
+      <div class="button-row">
+        <button class="btn btn-green">Login</button>
+        <button class="btn btn-gray">Register</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-area">
+    <section class="main-panel">
+      <div class="panel-header">
+        <h2>🏛 Lobby</h2>
+      </div>
+
+      <div class="panel-body">
+        <div class="content-grid">
+          <div class="card" id="game-config-card">
+            <h3>Game Configuration</h3>
+            <p>Game mode, categories and difficulty will be added here.</p>
+          </div>
+
+          <div class="card">
+            <h3>Active Players</h3>
+            <ul id="player-list" class="player-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn">Lobby</button>
+      <button class="nav-btn">Game</button>
+      <button class="nav-btn">Evaluation</button>
+      <button class="nav-btn">Web Controller</button>
+      <button class="nav-btn">Highscores</button>
+    </nav>
+  </main>
+</div>
+</body>
+</html>

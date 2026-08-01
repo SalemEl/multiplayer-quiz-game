@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Controller</title>
+  <link rel="stylesheet" href="controller.css">
+  <script src="env.js"></script>
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script defer src="controller.js"></script>
+</head>
+<body>
+<div class="controller-page">
+  <div class="controller-card">
+    <div class="controller-header">
+      <h1>🎮 Web Controller</h1>
+    </div>
+
+    <div class="controller-body">
+      <div class="info-box">
+        <p><strong>Controller ID:</strong> <span id="controller-id">---</span></p>
+        <p><strong>Player:</strong> <span id="player-name">Not assigned</span></p>
+        <p><strong>Status:</strong> <span id="connection-status" class="status-badge status-disconnected">Disconnected</span></p>
+        <!--  Punkte anzeigen -->
+        <p><strong>Punkte:</strong> <span id="player-points">0</span></p>
+      </div>
+
+      <!-- Fix 11: Countdown anzeigen -->
+      <div class="countdown-box" id="countdown-box" style="display:none;">
+        <h2>Spiel startet in</h2>
+        <div class="countdown-number" id="countdown-value">3</div>
+      </div>
+
+      <div class="message-box">
+        <p id="controller-message">Waiting for connection...</p>
+      </div>
+
+      <div class="ready-section">
+        <button id="ready-btn" class="main-btn ready-btn">Ready</button>
+      </div>
+
+      <div class="question-section">
+        <h2>Current Question</h2>
+
+        <div class="timer-box">
+          <span id="timer-value">30</span> Sekunden
+        </div>
+
+        <p id="question-text">Waiting for question...</p>
+
+        <div class="answer-grid">
+          <button class="answer-btn answer-a" data-answer="A" disabled>A</button>
+          <button class="answer-btn answer-b" data-answer="B" disabled>B</button>
+          <button class="answer-btn answer-c" data-answer="C" disabled>C</button>
+          <button class="answer-btn answer-d" data-answer="D" disabled>D</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
