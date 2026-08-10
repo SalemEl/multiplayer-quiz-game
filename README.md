@@ -1,4 +1,4 @@
-# Multiplayer Trivia Quiz – Gruppe 07
+# Multiplayer Trivia Quiz
 
 Wintersemester 2025/2026 | GEN1002 Informatik-Projekt | THM
 
@@ -6,10 +6,12 @@ Wintersemester 2025/2026 | GEN1002 Informatik-Projekt | THM
 
 ## Team
 
-| Name         | Aufgabe |
-|--------------|---------|
-| Salem Elabid | Frontend, Web-Controller, Arduino/Hardware-Controller |
-| Salah-Eddine Safouate        | Backend, Datenbank |
+Hochschulprojekt (GEN1002, THM Gießen, WiSe 2025/26) – entwickelt im 2er-Team.
+
+| Name | Verantwortung |
+|------|---------------|
+| **Salem Elabid** (dieses Repository) | Web-Frontend, Web-Controller, ESP32-Hardware-Controller (Firmware), MQTT-Kommunikationsschicht, Integration |
+| Salah-Eddine Safouate | Java-Backend, Datenbank, Spiellogik |
 
 
 ---
@@ -77,19 +79,13 @@ Ubuntu wird empfohlen. Windows-Nutzer können WSL verwenden, allerdings ohne off
 
 Anleitung: https://docs.docker.com/desktop/
 
-### SSH-Key zu GitLab hinzufügen
-
-Anleitung: https://git.thm.de/help/user/ssh
-
----
-
 ## Projekt starten
 
 ### 1. Repository klonen
 
 ```bash
-git clone <GitLab-URL>
-cd group-07
+git clone https://github.com/SalemEl/multiplayer-quiz-game.git
+cd multiplayer-quiz-game
 ```
 
 ### 2. Umgebungsvariablen prüfen
